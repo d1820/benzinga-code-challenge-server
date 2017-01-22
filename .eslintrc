@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "comma-dangle": ["off"],
+    "no-unused-vars": ["warn"],
+    "object-curly-spacing": ["off"],
+    "padded-blocks": ["off"],
+    "no-underscore-dangle": [ "off", { "allowAfterThis": true }],
+    "import/no-extraneous-dependencies": ["warn"],
+    "import/prefer-default-export": ["warn"],
+    "import/no-unresolved": ["error", {
+        "ignore": [
+          "config",
+          "components/",
+          "stores/",
+          "actions/",
+          "sources/",
+          "styles/",
+          "images/"
+        ]
+    }]
+  }
+}
